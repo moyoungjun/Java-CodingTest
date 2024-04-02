@@ -1,6 +1,4 @@
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
@@ -8,11 +6,9 @@ import java.util.Set;
 public class bj_1268 {
     public static void main(String[] args) throws IOException {
         Scanner sc = new Scanner(System.in);
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         int a = sc.nextInt();
         int[][] arr = new int[a][5];
-        int[][] same = new int [a][5];
         for(int i=0; i < a;i++) {
             for(int j=0; j<5; j++) {
                 arr[i][j] = sc.nextInt();
